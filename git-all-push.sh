@@ -10,6 +10,7 @@ echo "Enter 'n' to cancel"
 echo ""
 read -p 'commit -m ' varCommit
 
+# Check input
 if [ -z "$varCommit" ]; then
 	echo ""
 	echo "Please put in a commit message."
@@ -23,20 +24,22 @@ else
 	echo ""
 fi
 
+# Add all unstaged files
 git add .
 
+# Commit file changes with stored message
 git commit -m "$varCommit"
 
+# Push to github remote repository
 git push
 
-echo ""
-git status
-echo ""
-
+# Completion Response to User
 echo "------------------------------Script Complete------------------------------"
 echo ""
 echo "commit -m: $varCommit"
 echo ""
 echo "Pushed to github"
-
+echo ""
+git status
+echo ""
 exit
