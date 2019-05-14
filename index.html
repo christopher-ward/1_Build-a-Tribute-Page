@@ -3,19 +3,39 @@
   <head>
     <style> /* Current Tribute Page Style Section  */
 
+      body {
+
+        color: #E8FAE1;
+        background-color: #727A6E;
+      }
+
       #main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        color: inherit;
+        background-color: inherit;
       }
 
       #title {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        background-color: inherit;
       }
 
-      #img-div img {
+      #img-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #151715;
+        background-color: #ADBAA8;
+        width: 100%;
+      }
+
+      #image {
+        display: block;
         width: 100%;
         max-width: 1024px;
         height: auto;
@@ -28,6 +48,22 @@
 
       #tribute-info {
         width: 50%;
+      }
+
+      footer {
+        display: flex;
+        justify-content: center;
+        color: #151715;
+        background-color: #ADBAA8;
+      }
+
+      footer a {
+        color: #1a40a1;
+      }
+
+      footer a:hover {
+        background-color: #8496B3;
+        color: #D6E6FF;
       }
 
     </style>
@@ -44,7 +80,7 @@
       </div>
 
       <div id="img-div">
-        <img id="image" src="./resources/images/Dr_Borlaug_Field.jpg" alt="Dr. Norman Borlaug standing in Mexican wheat field">
+        <img id="image" src="https://raw.githubusercontent.com/chrisward90/1_Build-a-Tribute-Page/master/resources/images/Dr_Borlaug_Field.jpg" alt="Dr. Norman Borlaug standing in Mexican wheat field">
         <p id="img-caption">Dr. Norman Borlaug, second from left, trains biologists in Mexico on how to increase wheat yields - part of his life-long war on hunger.</p>
       </div>
 
@@ -72,8 +108,7 @@
 
       <p><em>"Borlaug's life and achievement are testimony to the far-reaching contribution that one man's towering intellect, persistence and scientific vision can make to human peace and progress."</em></p>
       <p><em>-- Indian Prime Minister Manmohan Singh</em></p>
-
-      <p id="tribute-link-text">If you'd like to know more about Dr. Borlaug, you could start here: <a id="tribute-link" href="https://en.wikipedia.org/wiki/Norman_Borlaug" target="_blank">Norman Borlaug Wikipedia</a></p>
     </main>
+    <footer><p id="tribute-link-text">If you'd like to know more about Dr. Borlaug, you could start here: <a id="tribute-link" href="https://en.wikipedia.org/wiki/Norman_Borlaug" target="_blank">Norman Borlaug Wikipedia</a></p></footer>
   </body>
 </html>
